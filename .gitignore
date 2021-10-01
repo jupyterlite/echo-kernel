@@ -110,3 +110,6 @@ dmypy.json
 
 # OSX files
 .DS_Store
+
+*.doit.db
+_output

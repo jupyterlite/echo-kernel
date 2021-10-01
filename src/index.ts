@@ -1,17 +1,49 @@
+// Copyright (c) JupyterLite Contributors
+// Distributed under the terms of the Modified BSD License.
+
 import {
   JupyterLiteServer,
   JupyterLiteServerPlugin
 } from '@jupyterlite/server';
 
+import { IKernel, IKernelSpecs } from '@jupyterlite/kernel';
+
+import { EchoKernel } from './kernel';
+
 /**
- * Initialization data for the @jupyterlite/echo-kernel extension.
+ * A plugin to register the echo kernel.
  */
-const plugin: JupyterLiteServerPlugin<void> = {
-  id: '@jupyterlite/echo-kernel:plugin',
+const kernel: JupyterLiteServerPlugin<void> = {
+  id: '@jupyterlite/echo-kernel:kernel',
   autoStart: true,
-  activate: (app: JupyterLiteServer) => {
-    console.log('JupyterLite server extension @jupyterlite/echo-kernel is activated!');
+  requires: [IKernelSpecs],
+  activate: (app: JupyterLiteServer, kernelspecs: IKernelSpecs) => {
+    kernelspecs.register({
+      spec: {
+        name: 'echo',
+        display_name: 'Echo',
+        language: 'text',
+        argv: [],
+        spec: {
+          argv: [],
+          env: {},
+          display_name: 'Echo',
+          language: 'text',
+          interrupt_mode: 'message',
+          metadata: {}
+        },
+        resources: {
+          'logo-32x32': '',
+          'logo-64x64': ''
+        }
+      },
+      create: async (options: IKernel.IOptions): Promise<IKernel> => {
+        return new EchoKernel(options);
+      }
+    });
   }
 };
 
-export default plugin;
+const plugins: JupyterLiteServerPlugin<any>[] = [kernel];
+
+export default plugins;

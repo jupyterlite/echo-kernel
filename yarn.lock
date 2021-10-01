@@ -158,7 +158,7 @@
     "@lumino/messaging" "^1.4.3"
     "@lumino/signaling" "^1.4.3"
 
-"@jupyterlab/services@~6.1.12":
+"@jupyterlab/services@^6.1.13", "@jupyterlab/services@~6.1.12":
   version "6.1.13"
   resolved "https://registry.yarnpkg.com/@jupyterlab/services/-/services-6.1.13.tgz#9e2048461a7ddf4cfb9280a1ec67c85896a07973"
   integrity sha512-fc4BTU4OvQ794wJ1VVjGaGmOfGjQblTDLDvO8BSu4wJEIp10EUfqEgqdvwdvOW0EKf4+Y+DDVRF7QcLHy4u08Q==
@@ -200,10 +200,10 @@
     "@lumino/properties" "^1.2.3"
     "@lumino/signaling" "^1.4.3"
 
-"@jupyterlite/contents@^0.1.0-alpha.9":
-  version "0.1.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@jupyterlite/contents/-/contents-0.1.0-alpha.9.tgz#6b686421fb3f8ef9a8ab5aaf3c3fa7bad2946def"
-  integrity sha512-KIkweKIQ529jD10Ke7M95gT/9YLSJ5R3QpGyQ9gkE0QT6JwJnyFRmQ4fCUY83Odvru8eVVKGuLX0ijWyyU79Hg==
+"@jupyterlite/contents@^0.1.0-alpha.10":
+  version "0.1.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@jupyterlite/contents/-/contents-0.1.0-alpha.10.tgz#f6b414c8f2d5d043207315700d87fba994454ac7"
+  integrity sha512-0IIEvGBRc4/Mo00o2VciToOUbKrSguC/+SZ3D7JLzE4938+RggM2WMJwF3eLw9FcDuGP83371P1bhbjuLIkmdQ==
   dependencies:
     "@jupyterlab/nbformat" "~3.1.12"
     "@jupyterlab/services" "~6.1.12"
@@ -211,10 +211,10 @@
     "@lumino/signaling" "^1.7.0"
     localforage "^1.9.0"
 
-"@jupyterlite/kernel@^0.1.0-alpha.9":
-  version "0.1.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@jupyterlite/kernel/-/kernel-0.1.0-alpha.9.tgz#57a69ca0bea14a24223f3ac8c96f859386b04415"
-  integrity sha512-Uu37FAtUXrDD+Cu1mHbT1SWEh3m7rbQAlh2NTgWKXDj0soLJAqg7fk4L8tJbQvZPAMVc4/aii6fttklUuqecHQ==
+"@jupyterlite/kernel@^0.1.0-alpha.10":
+  version "0.1.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@jupyterlite/kernel/-/kernel-0.1.0-alpha.10.tgz#b951c6d8a13643a4b09b8f5ff6514cc57d52e598"
+  integrity sha512-Hgr7n24z2PgQv30DD55COZ+l0dFSp9rYpZxtZ/4AG7eOp1mih82f75x4+8vUPE6T3YFBOSDOdTHvtSzwz0TUqQ==
   dependencies:
     "@jupyterlab/observables" "~4.1.12"
     "@jupyterlab/services" "~6.1.12"
@@ -224,10 +224,10 @@
     async-mutex "^0.3.1"
     mock-socket "^9.0.3"
 
-"@jupyterlite/server@^0.1.0-alpha.9":
-  version "0.1.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@jupyterlite/server/-/server-0.1.0-alpha.9.tgz#38337fbcfee2f838ec64219621ad41c911162591"
-  integrity sha512-Isjvzr6ChYitJFJigLhzmOFi24xu+s4UFsrmd7FFQwRE2VGKrwKjFosagA5w7raSS4Gyrcc6JYZz0OYs908jdg==
+"@jupyterlite/server@^0.1.0-alpha.10":
+  version "0.1.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@jupyterlite/server/-/server-0.1.0-alpha.10.tgz#49f3296d63ea797e558f20866a30527d91ccf5a9"
+  integrity sha512-DbARazmWbZ2Xu1ZBpwZA4VRy8C9EmP+6hXXHnB/9BDtYOh1D2DgT9uLfCgm9aD0rH+jzkVuNg4OBzCNcW2jjLw==
   dependencies:
     "@jupyterlab/coreutils" "~5.1.12"
     "@jupyterlab/nbformat" "~3.1.12"
@@ -235,29 +235,29 @@
     "@jupyterlab/services" "~6.1.12"
     "@jupyterlab/settingregistry" "~3.1.12"
     "@jupyterlab/statedb" "~3.1.12"
-    "@jupyterlite/contents" "^0.1.0-alpha.9"
-    "@jupyterlite/kernel" "^0.1.0-alpha.9"
-    "@jupyterlite/session" "^0.1.0-alpha.9"
-    "@jupyterlite/settings" "^0.1.0-alpha.9"
-    "@jupyterlite/translation" "^0.1.0-alpha.9"
+    "@jupyterlite/contents" "^0.1.0-alpha.10"
+    "@jupyterlite/kernel" "^0.1.0-alpha.10"
+    "@jupyterlite/session" "^0.1.0-alpha.10"
+    "@jupyterlite/settings" "^0.1.0-alpha.10"
+    "@jupyterlite/translation" "^0.1.0-alpha.10"
     "@lumino/application" "^1.20.0"
     "@lumino/coreutils" "^1.8.0"
     mock-socket "^9.0.3"
 
-"@jupyterlite/session@^0.1.0-alpha.9":
-  version "0.1.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@jupyterlite/session/-/session-0.1.0-alpha.9.tgz#b5b6927085d81f4377b4c28ae08572111adb1127"
-  integrity sha512-pxw8JfKPyg2OSSakSz3QZv7K8ud0KNmRyOPqrkMaweJA8sGhhoOVBDHYXU5+MrQEljy7svEzg+4dKISaEZTAMA==
+"@jupyterlite/session@^0.1.0-alpha.10":
+  version "0.1.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@jupyterlite/session/-/session-0.1.0-alpha.10.tgz#51c3654296ea4ceb4ddabc6e5e17eefc70ec8949"
+  integrity sha512-1HkTq+MtvbfHS0rpvfyEGTwk6w/TM2kDM9gzowPu2g4Id34a1TEM8CVL2b0gvs4GwK/ccqiAd3S6F0cWMVrPWw==
   dependencies:
     "@jupyterlab/services" "~6.1.12"
-    "@jupyterlite/kernel" "^0.1.0-alpha.9"
+    "@jupyterlite/kernel" "^0.1.0-alpha.10"
     "@lumino/algorithm" "^1.6.0"
     "@lumino/coreutils" "^1.8.0"
 
-"@jupyterlite/settings@^0.1.0-alpha.9":
-  version "0.1.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@jupyterlite/settings/-/settings-0.1.0-alpha.9.tgz#fe7719454f82f46944d4260df39eb7ad9dc99752"
-  integrity sha512-WH0e5b0dq/lYl5vSHps14tJ8S68HhWI0TOojxTGv8usZ/amloUeDPtflXrmveo8u1me3rBAQ3haX8aBYgfhsPA==
+"@jupyterlite/settings@^0.1.0-alpha.10":
+  version "0.1.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@jupyterlite/settings/-/settings-0.1.0-alpha.10.tgz#548f1b8958b5dc8e9ca930f56bf7240b3071f7ef"
+  integrity sha512-japQNZ8BFc1kcMnGELVTLZDpXguDUNdxdjSyVmPj1PslBCmuSShS7JDqljAqQBhD7FzVkcYLPQI88JEkK/Iagg==
   dependencies:
     "@jupyterlab/coreutils" "~5.1.12"
     "@jupyterlab/settingregistry" "~3.1.12"
@@ -265,10 +265,10 @@
     json5 "^2.2.0"
     localforage "^1.9.0"
 
-"@jupyterlite/translation@^0.1.0-alpha.9":
-  version "0.1.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/@jupyterlite/translation/-/translation-0.1.0-alpha.9.tgz#8f9a64526c0c182158e4db613cc0e0f5587ffaaf"
-  integrity sha512-pHQYl9P1PzBk11py/gT1WwbfqECtKQXHB1ORAvCecwhvNuNiN61x+slmKo8z1FaNyW5xhp5Q0zErhz682HpDmw==
+"@jupyterlite/translation@^0.1.0-alpha.10":
+  version "0.1.0-alpha.10"
+  resolved "https://registry.yarnpkg.com/@jupyterlite/translation/-/translation-0.1.0-alpha.10.tgz#0b78e5644e15f0bb363f1078813e5f773b23cbc0"
+  integrity sha512-H9fjALJyouJBkjmKEL0ksfEKjnecTntoPj83eojNRJAkx60IBUpB5GaCqlfZmQqTeRldndI6TnQJceiUcfOoHA==
   dependencies:
     "@jupyterlab/coreutils" "~5.1.12"
     "@lumino/coreutils" "^1.8.0"

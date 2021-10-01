@@ -46,7 +46,9 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@jupyterlite/server": "^0.1.0-alpha.9"
+    "@jupyterlab/services": "^6.1.13",
+    "@jupyterlite/kernel": "^0.1.0-alpha.10",
+    "@jupyterlite/server": "^0.1.0-alpha.10"
   },
   "devDependencies": {
     "@jupyterlab/builder": "^3.1.0",
@@ -67,7 +69,16 @@
   "styleModule": "style/index.js",
   "jupyterlab": {
     "extension": true,
-    "outputDir": "jupyterlite-echo-kernel/labextension"
+    "outputDir": "jupyterlite-echo-kernel/labextension",
+    "sharedPackages": {
+      "@jupyterlite/kernel": {
+        "bundled": false,
+        "singleton": true
+      }
+    }
+  },
+  "jupyterlite": {
+    "liteExtension": true
   },
   "jupyter-releaser": {
     "hooks": {
