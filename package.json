@@ -36,7 +36,7 @@
     "build:lib": "tsc",
     "clean": "jlpm run clean:lib",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
-    "clean:labextension": "rimraf jupyterlite-echo-kernel/labextension",
+    "clean:labextension": "rimraf jupyterlite_echo_kernel/labextension",
     "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
     "eslint": "eslint . --ext .ts,.tsx --fix",
     "eslint:check": "eslint . --ext .ts,.tsx",
@@ -69,7 +69,7 @@
   "styleModule": "style/index.js",
   "jupyterlab": {
     "extension": true,
-    "outputDir": "jupyterlite-echo-kernel/labextension",
+    "outputDir": "jupyterlite_echo_kernel/labextension",
     "sharedPackages": {
       "@jupyterlite/kernel": {
         "bundled": false,
@@ -81,6 +81,7 @@
     "liteExtension": true
   },
   "jupyter-releaser": {
+    "skip": ["check-links"],
     "hooks": {
       "before-build-npm": [
         "python -m pip install jupyterlab~=3.1",

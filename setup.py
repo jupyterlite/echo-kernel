@@ -1,5 +1,5 @@
 """
-jupyterlite-echo-kernel setup
+jupyterlite_echo_kernel setup
 """
 import json
 import sys
@@ -36,7 +36,7 @@ version = (
     .replace("-alpha.", "a")
     .replace("-beta.", "b")
     .replace("-rc.", "rc")
-) 
+)
 
 setup_args = dict(
     name=name,
