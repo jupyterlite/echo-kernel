@@ -6,7 +6,7 @@ include install.json
 include ts*.json
 include yarn.lock
 
-graft jupyterlite-echo-kernel/labextension
+graft jupyterlite_echo_kernel/labextension
 
 # Javascript files
 graft src

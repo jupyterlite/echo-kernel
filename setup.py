@@ -1,5 +1,5 @@
 """
-jupyterlite-echo-kernel setup
+jupyterlite_echo_kernel setup
 """
 import json
 import sys
@@ -10,7 +10,7 @@ import setuptools
 HERE = Path(__file__).parent.resolve()
 
 # The name of the project
-name = "jupyterlite-echo-kernel"
+name = "jupyterlite_echo_kernel"
 
 lab_path = (HERE / name.replace("-", "_") / "labextension")
 
@@ -36,7 +36,7 @@ version = (
     .replace("-alpha.", "a")
     .replace("-beta.", "b")
     .replace("-rc.", "rc")
-) 
+)
 
 setup_args = dict(
     name=name,
