@@ -67,6 +67,9 @@
     "style/index.js"
   ],
   "styleModule": "style/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "jupyterlab": {
     "extension": true,
     "outputDir": "jupyterlite_echo_kernel/labextension",
