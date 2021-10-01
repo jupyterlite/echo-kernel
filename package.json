@@ -81,6 +81,7 @@
     "liteExtension": true
   },
   "jupyter-releaser": {
+    "skip": ["check-links"],
     "hooks": {
       "before-build-npm": [
         "python -m pip install jupyterlab~=3.1",
