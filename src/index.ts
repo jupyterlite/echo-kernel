@@ -24,14 +24,6 @@ const kernel: JupyterLiteServerPlugin<void> = {
         display_name: 'Echo',
         language: 'text',
         argv: [],
-        spec: {
-          argv: [],
-          env: {},
-          display_name: 'Echo',
-          language: 'text',
-          interrupt_mode: 'message',
-          metadata: {}
-        },
         resources: {
           'logo-32x32': '',
           'logo-64x64': ''
