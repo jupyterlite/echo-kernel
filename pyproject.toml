@@ -1,17 +1,119 @@
 [build-system]
-requires = ["jupyter_packaging~=0.10,<2", "jupyterlab~=3.1"]
-build-backend = "jupyter_packaging.build_api"
+requires = [
+    "hatchling >=1.4.0",
+    "jupyterlab >=4.3.3,<4.4.0a0",
+]
+build-backend = "hatchling.build"
 
-[tool.jupyter-packaging.options]
-skip-if-exists = ["jupyterlite_echo_kernel/labextension/static/style.js"]
-ensured-targets = ["jupyterlite_echo_kernel/labextension/static/style.js", "jupyterlite_echo_kernel/labextension/package.json"]
+[project]
+name = "echo-kernel"
+dynamic = ["version"]
+readme = "README.md"
+description = "An echo kernel for JupyterLite."
+authors = [
+    { name = "JupyterLite Contributors" },
+]
+keywords = [
+    "jupyterlite",
+    "jupyter",
+    "jupyterlab",
+    "notebook",
+    "browser",
+    "jupyterlite-extension"
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "Framework :: Jupyter :: JupyterLab :: 4",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "jupyterlite-core >=0.5.0a0,<0.6.0",
+    "pkginfo"
+]
 
-[tool.jupyter-packaging.builder]
-factory = "jupyter_packaging.npm_builder"
+[project.urls]
+Homepage = ""
+Documentation = ""
+Source = ""
+Issues = ""
+PyPI = ""
 
-[tool.jupyter-packaging.build-args]
-build_cmd = "build:prod"
-npm = ["jlpm"]
+[project.optional-dependencies]
+dev = [
+    "build",
+    "hatch",
+    "jupyterlab >=4.3.3,<4.4.0a0",
+]
 
-[tool.check-manifest]
-ignore = ["jupyterlite_echo_kernel/labextension/**", "yarn.lock", ".*", "package-lock.json"]
+lint = [
+    "ruff >=0.3.0",
+]
+
+test = [
+    "pytest-console-scripts >=1.4.0",
+    "pytest-cov",
+    "pytest-html",
+    "pytest",
+]
+
+docs = [
+    "ipywidgets >=8.1.3,<9",
+    "jupyterlab-language-pack-fr-FR",
+    "jupyterlab-language-pack-zh-CN",
+    "myst-parser",
+    "pydata-sphinx-theme",
+    "sphinx-copybutton",
+    "jupyter-server-mathjax",
+    "libarchive-c"
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "jupyterlite_echo_kernel/_version.py"
+
+[tool.hatch.build.targets.sdist]
+artifacts = ["jupyterlite_echo_kernel/labextension"]
+exclude = [
+    ".github",
+]
+include = [
+    "/jupyterlite_echo_kernel",
+    "/package.json",
+    "/install.json",
+    "/ts*.json",
+    "/*.md"
+]
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "/jupyterlite_echo_kernel",
+]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"jupyterlite_echo_kernel/labextension" = "share/jupyter/labextensions/@jupyterlite/jupyterlite_echo_kernel"
+"install.json" = "share/jupyter/labextensions/@jupyterlite/jupyterlite_echo_kernel/install.json"
+
+[tool.check-wheel-contents]
+ignore = ["W002"]
+
+[tool.ruff]
+cache-dir = "build/.cache/ruff"
+extend-include = ["*.ipynb"]
+include = [
+    "setup.py",
+    "scripts/**/*.py",
+    "jupyterlite_echo_kernel/**/*.py",
+]
+

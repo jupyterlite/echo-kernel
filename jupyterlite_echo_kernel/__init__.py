@@ -14,3 +14,5 @@ def _jupyter_labextension_paths():
         "src": "labextension",
         "dest": data["name"]
     }]
+
+__all__ = ["__version__", "_jupyter_labextension_paths"]
