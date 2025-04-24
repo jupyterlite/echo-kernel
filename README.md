@@ -6,10 +6,9 @@ An echo kernel for JupyterLite.
 
 ![echo-kernel](https://user-images.githubusercontent.com/591645/135660177-13f909fb-b63b-4bc9-9bf3-e2b6c37ee015.gif)
 
-
 ## Requirements
 
-* JupyterLite >= 0.1.0a10
+- JupyterLite >= 0.1.0a10
 
 ## Install
 
@@ -66,7 +65,6 @@ jupyter lab
 ```
 
 With the watch command running, every saved change will immediately be built locally and available in your running JupyterLab. Refresh JupyterLab to load the change in your browser (you may need to wait several seconds for the extension to be rebuilt).
-
 
 ### Development uninstall
 
