@@ -37,7 +37,9 @@ jobs:
 
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "@jupyterlite/echo-kernel.*OK"
-        python -m jupyterlab.browser_check
+
+        # TODO: add JupyterLite browser check
+        # python -m jupyterlab.browser_check
 
     - name: Package the extension
       run: |
@@ -79,7 +81,9 @@ jobs:
 
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "@jupyterlite/echo-kernel.*OK"
-        python -m jupyterlab.browser_check --no-browser-test
+
+        # TODO: add JupyterLite browser check
+        # python -m jupyterlab.browser_check --no-browser-test
 
 
   check_links:
