@@ -119,3 +119,6 @@ dmypy.json
 
 # Yarn cache
 .yarn/
+
+# Jupyter Notebook
+[Uu]ntitled*
