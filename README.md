@@ -8,7 +8,7 @@ An echo kernel for JupyterLite.
 
 ## Requirements
 
-- JupyterLite >= 0.1.0a10
+- JupyterLite >= 0.6.0a9
 
 ## Install
 
