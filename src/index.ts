@@ -2,9 +2,9 @@
 // Distributed under the terms of the Modified BSD License.
 
 import {
-  JupyterLiteServer,
-  JupyterLiteServerPlugin
-} from '@jupyterlite/server';
+  JupyterFrontEnd,
+  JupyterFrontEndPlugin
+} from '@jupyterlab/application';
 
 import { IKernel, IKernelSpecs } from '@jupyterlite/kernel';
 
@@ -13,11 +13,11 @@ import { EchoKernel } from './kernel';
 /**
  * A plugin to register the echo kernel.
  */
-const kernel: JupyterLiteServerPlugin<void> = {
+const kernel: JupyterFrontEndPlugin<void> = {
   id: '@jupyterlite/echo-kernel:kernel',
   autoStart: true,
   requires: [IKernelSpecs],
-  activate: (app: JupyterLiteServer, kernelspecs: IKernelSpecs) => {
+  activate: (app: JupyterFrontEnd, kernelspecs: IKernelSpecs) => {
     kernelspecs.register({
       spec: {
         name: 'echo',
@@ -36,6 +36,6 @@ const kernel: JupyterLiteServerPlugin<void> = {
   }
 };
 
-const plugins: JupyterLiteServerPlugin<any>[] = [kernel];
+const plugins: JupyterFrontEndPlugin<any>[] = [kernel];
 
 export default plugins;

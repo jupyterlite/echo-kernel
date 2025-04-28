@@ -2,4 +2,6 @@ node_modules
 **/node_modules
 **/lib
 **/package.json
+!/package.json
 jupyterlite_echo_kernel
+.venv
