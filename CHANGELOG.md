@@ -2,6 +2,23 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.3.0
+
+([Full Changelog](https://github.com/jupyterlite/echo-kernel/compare/v0.2.0...a96d8902c9da7ffbba5e4acb565434c01411a233))
+
+### Maintenance and upkeep improvements
+
+- Update to JupyterLite 0.6.0 final [#11](https://github.com/jupyterlite/echo-kernel/pull/11) ([@jtpio](https://github.com/jtpio))
+- Update to JupyterLite 0.6.0 and the new template [#10](https://github.com/jupyterlite/echo-kernel/pull/10) ([@jtpio](https://github.com/jtpio))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/jupyterlite/echo-kernel/graphs/contributors?from=2022-06-08&to=2025-06-02&type=c))
+
+[@jtpio](https://github.com/search?q=repo%3Ajupyterlite%2Fecho-kernel+involves%3Ajtpio+updated%3A2022-06-08..2025-06-02&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.2.0
 
 ([Full Changelog](https://github.com/jupyterlite/echo-kernel/compare/v0.1.2...1a30deec6901f5a6d35aa0f0ac571f1acb076c90))
@@ -15,8 +32,6 @@
 ([GitHub contributors page for this release](https://github.com/jupyterlite/echo-kernel/graphs/contributors?from=2021-11-15&to=2022-06-08&type=c))
 
 [@jtpio](https://github.com/search?q=repo%3Ajupyterlite%2Fecho-kernel+involves%3Ajtpio+updated%3A2021-11-15..2022-06-08&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 0.1.2
 
