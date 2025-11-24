@@ -2,6 +2,23 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 0.4.0a0
+
+([Full Changelog](https://github.com/jupyterlite/echo-kernel/compare/v0.3.0...cdd678668b766af075af66814dd9a840161e2f68))
+
+### Maintenance and upkeep improvements
+
+- Use Node.js version to 24 to publish packages [#14](https://github.com/jupyterlite/echo-kernel/pull/14) ([@jtpio](https://github.com/jtpio))
+- Update to JupyterLite 0.7.0 [#13](https://github.com/jupyterlite/echo-kernel/pull/13) ([@jtpio](https://github.com/jtpio))
+
+### Contributors to this release
+
+([GitHub contributors page for this release](https://github.com/jupyterlite/echo-kernel/graphs/contributors?from=2025-06-02&to=2025-11-24&type=c))
+
+[@jtpio](https://github.com/search?q=repo%3Ajupyterlite%2Fecho-kernel+involves%3Ajtpio+updated%3A2025-06-02..2025-11-24&type=Issues)
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 0.3.0
 
 ([Full Changelog](https://github.com/jupyterlite/echo-kernel/compare/v0.2.0...a96d8902c9da7ffbba5e4acb565434c01411a233))
@@ -16,8 +33,6 @@
 ([GitHub contributors page for this release](https://github.com/jupyterlite/echo-kernel/graphs/contributors?from=2022-06-08&to=2025-06-02&type=c))
 
 [@jtpio](https://github.com/search?q=repo%3Ajupyterlite%2Fecho-kernel+involves%3Ajtpio+updated%3A2022-06-08..2025-06-02&type=Issues)
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 0.2.0
 
