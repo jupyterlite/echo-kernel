@@ -6,7 +6,9 @@ import {
   JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
-import { IKernel, IKernelSpecs } from '@jupyterlite/kernel';
+import type { IKernel } from '@jupyterlite/services';
+
+import { IKernelSpecs } from '@jupyterlite/services';
 
 import { EchoKernel } from './kernel';
 
