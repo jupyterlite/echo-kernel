@@ -122,3 +122,7 @@ dmypy.json
 
 # Jupyter Notebook
 [Uu]ntitled*
+
+# JupyterLite
+.jupyterlite.doit.db
+_output/
