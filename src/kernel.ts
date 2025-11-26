@@ -1,9 +1,9 @@
 // Copyright (c) JupyterLite Contributors
 // Distributed under the terms of the Modified BSD License.
 
-import { KernelMessage } from '@jupyterlab/services';
+import type { KernelMessage } from '@jupyterlab/services';
 
-import { BaseKernel } from '@jupyterlite/kernel';
+import { BaseKernel } from '@jupyterlite/services';
 
 /**
  * A kernel that echos content back.
